@@ -1,1 +1,4 @@
-# robots-experiments
+robots-experiments
+==============================
+
+Some rl experiments with robots
