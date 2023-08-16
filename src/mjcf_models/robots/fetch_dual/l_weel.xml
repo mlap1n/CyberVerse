@@ -1,0 +1,7 @@
+<mujoco>
+    <body name="l_wheel_link" pos="0.0012914 0.18738 0.055325">
+        <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="4.3542" diaginertia="0.005 0.0045 0.0045"/>
+        <joint name="l_wheel_joint" pos="0 0 0" axis="0 1 0"/>
+        <geom size="0.065" rgba="0.086 0.506 0.767 1"/>
+    </body>
+</mujoco>

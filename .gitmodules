@@ -1,0 +1,3 @@
+[submodule "mjcf_models"]
+	path = mjcf_models
+	url = git@github.com:mlap1n/mjcf_models.git

@@ -1,0 +1,8 @@
+<mujoco>
+    <actuator>
+        <motor name='r_finger_1_T' ctrllimited="true" joint='r_finger_1_joint_1' ctrlrange='-1 1' gear="20"/>
+        <motor name='r_finger_2_T' ctrllimited="true" joint='r_finger_2_joint_1' ctrlrange='-1 1' gear="20"/>
+        <motor name='r_middle_finger_T'  ctrllimited="true" joint='r_finger_middle_joint_1' ctrlrange='-1 1' gear="20"/>
+        <motor name='r_finger_scissor_T' ctrllimited="true" joint='r_palm_finger_1_joint' ctrlrange="-1 1" gear="15"/>
+    </actuator>
+</mujoco>

@@ -1,0 +1,38 @@
+<mujoco>
+    <body name="l_shoulder_pan_link" pos="0.0 0.12 0.34">
+        <inertial pos="0.0927 -0.0056 0.0564" quat="-0.136432 0.762398 -0.156155 0.612985" mass="2.5587" diaginertia="0.00896934 0.00864854 0.00408212"/>
+        <joint name="l_shoulder_pan_joint" pos="0 0 0" axis="0 0 1" range="-1.6056 1.6056" damping="1"/>
+        <geom type="mesh" rgba="1 1 1 1" mesh="l_shoulder_pan_link_collision"/>
+        <body name="l_shoulder_lift_link" pos="0.117 0 0.06">
+            <inertial pos="0.1432 0.0072 -0.0001" quat="0.438152 0.438152 0.554998 0.554998" mass="2.6615" diaginertia="0.0116011 0.0112 0.00229892"/>
+            <joint name="l_shoulder_lift_joint" pos="0 0 0" axis="0 1 0" range="-1.221 1.518" damping="1"/>
+            <geom type="mesh" rgba="0.086 0.506 0.767 1" mesh="shoulder_lift_link_collision"/>
+            <body name="l_upperarm_roll_link" pos="0.219 0 0">
+                <inertial pos="0.1165 0.0014 0" quat="-0.0135706 0.706977 0.0135706 0.706977" mass="2.3311" diaginertia="0.0047 0.00450384 0.00189616"/>
+                <joint name="l_upperarm_roll_joint" pos="0 0 0" axis="1 0 0" damping="5"/>
+                <geom type="mesh" rgba="1 1 1 1" mesh="upperarm_roll_link_collision"/>
+                <body name="l_elbow_flex_link" pos="0.133 0 0">
+                    <inertial pos="0.1279 0.0073 0" quat="0.43318 0.43318 0.558888 0.558888" mass="2.1299" diaginertia="0.0086121 0.0084 0.0019879"/>
+                    <joint name="l_elbow_flex_joint" pos="0 0 0" axis="0 1 0" range="-2.251 2.251" damping="1"/>
+                    <geom type="mesh" rgba="0.086 0.506 0.767 1" mesh="elbow_flex_link_collision"/>
+                    <body name="l_forearm_roll_link" pos="0.197 0 0">
+                        <inertial pos="0.1097 -0.0266 0" quat="-0.0714533 0.703487 0.0714533 0.703487" mass="1.6563" diaginertia="0.0035 0.00306158 0.00153842"/>
+                        <joint name="l_forearm_roll_joint" pos="0 0 0" axis="1 0 0" damping="5"/>
+                        <geom type="mesh" rgba="1 1 1 1" mesh="forearm_roll_link_collision"/>
+                        <body name="l_wrist_flex_link" pos="0.1245 0 0">
+                            <inertial pos="0.0882 0.0009 -0.0001" quat="0.4895 0.4895 0.510284 0.510284" mass="1.725" diaginertia="0.00420416 0.0042 0.00179584"/>
+                            <joint name="l_wrist_flex_joint" pos="0 0 0" axis="0 1 0" range="-2.16 2.16" damping="1"/>
+                            <geom type="mesh" rgba="0.086 0.506 0.767 1" mesh="wrist_flex_link_collision"/>
+                            <body name="l_wrist_roll_link" pos="0.1385 0 0">
+                                <inertial pos="0.0709657 -5.90417e-05 -0.00157713" quat="0.00123263 0.709764 -0.00131059 0.704437" mass="1.6529" diaginertia="0.00305731 0.00255748 0.0014002"/>
+                                <joint name="l_wrist_roll_joint" pos="0 0 0" axis="1 0 0" damping="5"/>
+                                <geom type="mesh" rgba="1 1 1 1" mesh="wrist_roll_link_collision"/>
+                                <include file="robots/gripper/l_robot_gripper.xml"></include>
+                            </body>
+                        </body>
+                    </body>
+                </body>
+            </body>
+        </body>
+    </body>
+</mujoco>

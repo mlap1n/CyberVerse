@@ -1,0 +1,82 @@
+<mujoco>
+    <visual>
+        <global offwidth="4072" offheight="2262" />
+        <quality shadowsize="2048" offsamples="8" />
+        <headlight diffuse="0.6 0.6 0.6" specular="0 0 0" />
+        <map fogstart="6" znear="0.01" />
+        <scale forcewidth="0.01" framelength="0.3" framewidth="0.01" />
+    </visual>
+    <default class="main1">
+        <default class="viz_stl_Metal_LR">
+            <geom type="mesh" group="1" material="M_Metal_LR" />
+        </default>
+        <default class="viz_stl_Wood_cube_LR">
+            <geom type="mesh" group="1" material="M_Wood_cube_LR" />
+        </default>
+        <default class="viz_stl_Wood_2d_LR">
+            <geom type="mesh" group="1" material="M_Wood_2d_LR" />
+        </default>
+        <default class="viz_stl_Fabric_cube_LR">
+            <geom type="mesh" group="1" material="M_Fabric_cube_LR" />
+        </default>
+        <default class="viz_stl_Fabric_2d_LR">
+            <geom type="mesh" group="1" material="M_Fabric_2d_LR" />
+        </default>
+        <default class="viz_stl_Painting_cube_LR">
+            <geom type="mesh" group="1" material="M_Painting_cube_LR" />
+        </default>
+        <default class="viz_drawer">
+            <joint limited="true" armature="0.1" damping="2" frictionloss="5" />
+            <geom contype="0" group="3" rgba="1 0 0 1" />
+        </default>
+        <default class="viz_body">
+            <joint limited="true" armature="0.01" damping="1" frictionloss="0.5" />
+            <geom contype="0" group="4" rgba="0 1 0 1" />
+        </default>
+    </default>
+    <asset>
+        <texture type="cube" name="T_Wood_cube_LR" file="../playroom/textures/Surface_wood_chipboard.jpg.png" />
+        <texture type="2d" name="T_Wood_2d_LR" file="../playroom/textures/Surface_wood_chipboard.jpg.png" />
+        <texture type="cube" name="T_Metal_LR" file="../playroom/textures/Texture_P7220210.JPG.png" />
+        <texture type="cube" name="T_Fabric_cube_LR" file="../playroom/textures/Blue_Gray_knit_texture.jpg.png" />
+        <texture type="2d" name="T_Fabric_2d_LR" file="../playroom/textures/Fabric_length_(AM_842431-1).jpg.png" />
+        <texture type="cube" name="T_Painting_cube_LR" file="../playroom/textures/Coloured,_textured_craft_card_edit.jpg.png" />
+        <texture type="2d" name="groundplane" builtin="checker" rgb1="0.2 0.3 0.4" rgb2="0.1 0.2 0.3" width="200" height="200" />
+        <texture type="skybox" name="skybox" builtin="gradient" mark="random" rgb1="0.4 0.6 0.8" rgb2="0 0 0" markrgb="1 1 1" width="800" height="4800" />
+        <material name="M_Fabric_cube_LR" texture="T_Fabric_cube_LR" shininess="0" />
+        <material name="M_Fabric_2d_LR" texture="T_Fabric_2d_LR" texuniform="true" texrepeat="3 3" shininess="0" rgba="0.2 0.2 0.2 1" />
+        <material name="groundplane" texture="groundplane" texrepeat="20 20" />
+        <material name="M_Wood_cube_LR" texture="T_Wood_cube_LR" shininess="0.2" reflectance="0.3" rgba="0.8 0.8 0.8 1" />
+        <material name="M_Wood_2d_LR" texture="T_Wood_2d_LR" shininess="0.2" reflectance="0.3" rgba="0.8 0.8 0.8 1" />
+        <material name="M_Metal_LR" texture="T_Metal_LR" texrepeat="3 3" reflectance="0.7" />
+        <material name="M_Painting_cube_LR" texture="T_Painting_cube_LR" shininess="0.2" reflectance="0.3" />
+        <material name="MatViz" specular="1" shininess="0.1" reflectance="0.5" rgba="0.07 0.07 0.1 1" />
+        <mesh name="SSC_Body" file="../playroom/meshes//SSC_Body.stl" scale="0.01 0.01 0.01" />
+        <mesh name="SSC_Stand" file="../playroom/meshes//SSC_Stand.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Table_Top" file="../playroom/meshes//Table_Top.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Table_Bottom" file="../playroom/meshes//Table_Bottom.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Doorway_Top" file="../playroom/meshes//Doorway_Top.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Doorway_Bottom" file="../playroom/meshes//Doorway_Bottom.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Window_Top" file="../playroom/meshes//Window_Top.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Window_Bottom" file="../playroom/meshes//Window_Bottom.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Wall_Top" file="../playroom/meshes//Wall_Top.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Wall_Bottom" file="../playroom/meshes//Wall_Bottom.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Lamp_Top" file="../playroom/meshes//Lamp_Top.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Lamp_Stand" file="../playroom/meshes//Lamp_Stand.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Painting_Canvas" file="../playroom/meshes//Painting_Canvas.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Painting_Frame" file="../playroom/meshes//Painting_Frame.stl" scale="0.01 0.01 0.01" />
+        <mesh name="StudyTable" file="../playroom/meshes//StudyTable.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Drawer_Wood" file="../playroom/meshes//Drawer_Wood.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Drawer_Handle" file="../playroom/meshes//Drawer_Handle.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Slide_Wood" file="../playroom/meshes//Slide_Wood.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Slide_Handle" file="../playroom/meshes//Slide_Handle.stl" scale="0.01 0.01 0.01" />
+        <mesh name="BlockBin" file="../playroom/meshes//BlockBin.stl" scale="0.01 0.01 0.01" />
+    </asset>
+    <worldbody>
+        <body name="Button 2" pos="0 -0.4 -0.2">
+            <inertial pos="-0.3 0.15 0.79" mass="1" diaginertia="0.001 0.001 0.001" />
+            <joint name="Button_Joint_2" pos="0 0 0" axis="0 0 1" type="slide" springref="1" limited="true" stiffness="0.5" range="-0.1 0" damping="1" />
+            <geom size="0.03 0.02" pos="-0.3 0.15 0.79" type="cylinder" group="1" rgba="0 0.3 0 1" />
+        </body>
+    </worldbody>
+</mujoco>

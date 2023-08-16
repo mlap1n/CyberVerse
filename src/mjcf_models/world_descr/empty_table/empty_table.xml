@@ -1,0 +1,31 @@
+<mujoco model="empty_table">
+    <include file="world_descr/empty_table/asset.xml"></include>
+    <worldbody>
+        <geom name="floor0" pos="0. 0. -0.14493" size="3 3 .125" type="plane" condim="3" material="floorplane"></geom>
+
+        <light directional="true" ambient="0.2 0.2 0.2" diffuse="0.8 0.8 0.8" specular="0.3 0.3 0.3" castshadow="false" pos="0 0 4" dir="0 0 -1" name="light0"></light>
+
+        <camera name="backview" pos="-3 0 1.85" xyaxes="0 -1 0 1 0 2" mode="fixed"/>
+        <camera name="frontview" pos="3.0 0 1.85" quat="0.56 0.43 0.43 0.56" mode="fixed"/>
+        <camera name="r_sideview" pos="-1 -3 1.85" xyaxes="1 -0.5 0 0.1 0.1 1" mode="fixed"/>
+
+        <!-- Table -->
+        <body pos="0.8 0 0.3" name="table0">
+            <geom size="0.5 0.5 0.2" type="box" mass="2000" material="table_mat"></geom>
+            <geom size="0.5 0.5 0.2" type="box" mass="2000" group="1" material="table_mat"></geom>
+        </body>
+
+        <body pos="0.8 0. 0.6" name="object0">
+            <joint name="object0:joint" type="free" damping="0.01"></joint>
+            <geom pos="0 0 0" mesh="can_mesh" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="100" friction="0.95 0.3 0.1" material="coke" group="1" condim="4"/>
+            <geom pos="0 0 0" mesh="can_mesh" type="mesh" material="coke" conaffinity="0" contype="0" group="1" mass="0.0001"/>
+            <site name="object0" pos="0 0 0" size="0.02 0.02 0.02" rgba="1 0 0 1" type="sphere"></site>
+
+            <site rgba="0 0 0 0" size="0.005" pos="0 0 -0.06" name="can_bottom_site"/>
+            <site rgba="0 0 0 0" size="0.005" pos="0 0 0.04" name="can_top_site"/>
+            <site rgba="0 0 0 0" size="0.005" pos="0.025 0.025 0" name="can_horizontal_radius_site"/>
+        </body>
+
+        <include file="robots/fetch_dual/robot.xml"></include>
+    </worldbody>
+</mujoco>

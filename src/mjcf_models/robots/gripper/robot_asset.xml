@@ -1,0 +1,15 @@
+<mujoco>
+    <asset>
+        <mesh name="link_0" file="robots/gripper/meshes/collision_link_0.STL" />
+        <mesh name="link_1" file="robots/gripper/meshes/link_1.STL" />
+        <mesh name="link_2" file="robots/gripper/meshes/link_2.STL" />
+        <mesh name="link_3" file="robots/gripper/meshes/link_3.STL" />
+        <mesh name="palm" file="robots/gripper/meshes/palm.STL" />
+        <!-- from Standford robosuite -->
+        <mesh name="collision_link_0" file="robots/gripper/meshes/collision_link_0.STL" />
+        <mesh name="collision_link_1" file="robots/gripper/meshes/collision_link_1.STL" />
+        <mesh name="collision_link_2" file="robots/gripper/meshes/collision_link_2.STL" />
+        <mesh name="collision_link_3" file="robots/gripper/meshes/collision_link_3.STL" />
+        <mesh name="collision_palm" file="robots/gripper/meshes/collision_palm.STL" />
+    </asset>
+</mujoco>

@@ -1,0 +1,6 @@
+<mujoco>
+    <actuator>
+        <position ctrllimited="true" ctrlrange="-10.0 10.0" joint="base_x_slide_joint" kp="18000" name="base_x_slide_joint" user="1"/>
+        <position ctrllimited="true" ctrlrange="-0.57 0.57" kp="20000" joint="base_z_hinge_joint" name="base_z_hinge_joint" user="1"/>
+    </actuator>
+</mujoco>

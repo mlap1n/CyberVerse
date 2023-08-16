@@ -1,0 +1,17 @@
+<mujoco>
+    <actuator>
+        <position name='head_pan_act'
+               joint='head_pan_joint'
+               ctrllimited="true"
+               ctrlrange='-3.14 3.14'
+               forcelimited="auto"
+               gear="100"/>
+
+        <position name='head_tilt_act'
+               joint='head_tilt_joint'
+               ctrllimited="true"
+               ctrlrange='-1 1'
+               forcelimited="auto"
+               gear="100"/>
+    </actuator>
+</mujoco>

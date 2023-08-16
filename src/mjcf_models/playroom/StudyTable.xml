@@ -1,0 +1,112 @@
+<mujoco>
+    <visual>
+        <global offwidth="4072" offheight="2262" />
+        <quality shadowsize="2048" offsamples="8" />
+        <headlight diffuse="0.6 0.6 0.6" specular="0 0 0" />
+        <map fogstart="6" znear="0.01" />
+        <scale forcewidth="0.01" framelength="0.3" framewidth="0.01" />
+    </visual>
+    <default class="main1">
+        <default class="viz_stl_Metal_LR">
+            <geom type="mesh" group="1" material="M_Metal_LR" />
+        </default>
+        <default class="viz_stl_Wood_cube_LR">
+            <geom type="mesh" group="1" material="M_Wood_cube_LR" />
+        </default>
+        <default class="viz_stl_Wood_2d_LR">
+            <geom type="mesh" group="1" material="M_Wood_2d_LR" />
+        </default>
+        <default class="viz_stl_Fabric_cube_LR">
+            <geom type="mesh" group="1" material="M_Fabric_cube_LR" />
+        </default>
+        <default class="viz_stl_Fabric_2d_LR">
+            <geom type="mesh" group="1" material="M_Fabric_2d_LR" />
+        </default>
+        <default class="viz_stl_Painting_cube_LR">
+            <geom type="mesh" group="1" material="M_Painting_cube_LR" />
+        </default>
+        <default class="viz_drawer">
+            <joint limited="true" armature="0.1" damping="2" frictionloss="5" />
+            <geom contype="0" group="3" rgba="1 0 0 1" />
+        </default>
+        <default class="viz_body">
+            <joint limited="true" armature="0.01" damping="1" frictionloss="0.5" />
+            <geom contype="0" group="4" rgba="0 1 0 1" />
+        </default>
+    </default>
+    <asset>
+        <texture type="cube" name="T_Wood_cube_LR" file="../playroom/textures/Surface_wood_chipboard.jpg.png" />
+        <texture type="2d" name="T_Wood_2d_LR" file="../playroom/textures/Surface_wood_chipboard.jpg.png" />
+        <texture type="cube" name="T_Metal_LR" file="../playroom/textures/Texture_P7220210.JPG.png" />
+        <texture type="cube" name="T_Fabric_cube_LR" file="../playroom/textures/Blue_Gray_knit_texture.jpg.png" />
+        <texture type="2d" name="T_Fabric_2d_LR" file="../playroom/textures/Fabric_length_(AM_842431-1).jpg.png" />
+        <texture type="cube" name="T_Painting_cube_LR" file="../playroom/textures/Coloured,_textured_craft_card_edit.jpg.png" />
+        <texture type="2d" name="groundplane" builtin="checker" rgb1="0.2 0.3 0.4" rgb2="0.1 0.2 0.3" width="200" height="200" />
+        <texture type="skybox" name="skybox" builtin="gradient" mark="random" rgb1="0.4 0.6 0.8" rgb2="0 0 0" markrgb="1 1 1" width="800" height="4800" />
+        <material name="M_Fabric_cube_LR" texture="T_Fabric_cube_LR" shininess="0" />
+        <material name="M_Fabric_2d_LR" texture="T_Fabric_2d_LR" texuniform="true" texrepeat="3 3" shininess="0" rgba="0.2 0.2 0.2 1" />
+        <material name="groundplane" texture="groundplane" texrepeat="20 20" />
+        <material name="M_Wood_cube_LR" texture="T_Wood_cube_LR" shininess="0.2" reflectance="0.3" rgba="0.8 0.8 0.8 1" />
+        <material name="M_Wood_2d_LR" texture="T_Wood_2d_LR" shininess="0.2" reflectance="0.3" rgba="0.8 0.8 0.8 1" />
+        <material name="M_Metal_LR" texture="T_Metal_LR" texrepeat="3 3" reflectance="0.7" />
+        <material name="M_Painting_cube_LR" texture="T_Painting_cube_LR" shininess="0.2" reflectance="0.3" />
+        <material name="MatViz" specular="1" shininess="0.1" reflectance="0.5" rgba="0.07 0.07 0.1 1" />
+        <mesh name="SSC_Body" file="../playroom/meshes//SSC_Body.stl" scale="0.01 0.01 0.01" />
+        <mesh name="SSC_Stand" file="../playroom/meshes//SSC_Stand.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Table_Top" file="../playroom/meshes//Table_Top.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Table_Bottom" file="../playroom/meshes//Table_Bottom.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Doorway_Top" file="../playroom/meshes//Doorway_Top.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Doorway_Bottom" file="../playroom/meshes//Doorway_Bottom.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Window_Top" file="../playroom/meshes//Window_Top.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Window_Bottom" file="../playroom/meshes//Window_Bottom.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Wall_Top" file="../playroom/meshes//Wall_Top.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Wall_Bottom" file="../playroom/meshes//Wall_Bottom.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Lamp_Top" file="../playroom/meshes//Lamp_Top.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Lamp_Stand" file="../playroom/meshes//Lamp_Stand.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Painting_Canvas" file="../playroom/meshes//Painting_Canvas.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Painting_Frame" file="../playroom/meshes//Painting_Frame.stl" scale="0.01 0.01 0.01" />
+        <mesh name="StudyTable" file="../playroom/meshes//StudyTable.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Drawer_Wood" file="../playroom/meshes//Drawer_Wood.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Drawer_Handle" file="../playroom/meshes//Drawer_Handle.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Slide_Wood" file="../playroom/meshes//Slide_Wood.stl" scale="0.01 0.01 0.01" />
+        <mesh name="Slide_Handle" file="../playroom/meshes//Slide_Handle.stl" scale="0.01 0.01 0.01" />
+        <mesh name="BlockBin" file="../playroom/meshes//BlockBin.stl" scale="0.01 0.01 0.01" />
+    </asset>
+    <worldbody>
+        <body name="StudyTable" childclass="viz_body" pos="0 -0.4 -0.2">
+            <inertial pos="-0.0105241 0.0769411 0.760166" quat="0.584517 0.394281 0.595861 0.384489" mass="554.518" diaginertia="108.365 86.7491 39.9742" />
+            <geom class="viz_stl_Wood_cube_LR" quat="0.000563312 -0.000562864 0.706825 0.707388" contype="0" conaffinity="0" mesh="StudyTable" />
+            <geom size="0.3 0.275 0.025" pos="0.3 0 0.735" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.17 0.26 0.05" pos="0.42 0 0.66" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.17 0.26 0.05" pos="-0.42 0 0.66" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.025 0.025 0.305" pos="-0.565 0.235 0.305" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.025 0.025 0.305" pos="-0.565 -0.235 0.305" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.025 0.025 0.305" pos="0.565 0.235 0.305" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.025 0.025 0.305" pos="0.565 -0.235 0.305" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.3 0.01 0.175" pos="0.3 0.265 0.935" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.3 0.11 0.01" pos="0.3 0.165 1.1" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.01 0.11 0.175" pos="0.59 0.165 0.935" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.01 0.11 0.175" pos="-0.59 0.165 0.935" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.01 0.11 0.175" pos="0 0.165 0.935" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.3 0.19 0.025" pos="-0.3 -0.085 0.735" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.0525 0.26 0.025" pos="-0.055 0 0.735" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.035 0.26 0.025" pos="-0.225 0 0.735" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.035 0.26 0.025" pos="-0.375 0 0.735" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.0525 0.26 0.025" pos="-0.54 0 0.735" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.06 0.01 0.175" pos="-0.065 0.265 0.935" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.0525 0.01 0.175" pos="-0.22535 0.265 0.935" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.0525 0.01 0.175" pos="-0.375 0.265 0.935" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.06 0.01 0.175" pos="-0.54 0.265 0.935" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.3 0.01 0.135" pos="-0.3 0.265 0.96" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.04 0.11 0.01" pos="-0.0475 0.165 1.1" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.0125 0.11 0.01" pos="-0.225 0.165 1.1" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.0125 0.11 0.01" pos="-0.375 0.165 1.1" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.04 0.11 0.01" pos="-0.555 0.165 1.1" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.3 0.01625 0.01" pos="-0.3 0.07125 1.1" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.3 0.03125 0.01" pos="-0.3 0.2435 1.1" type="box" rgba="0.8 0.9 0.7 1" />
+            <geom size="0.06 0.001" pos="-0.15 0.15 1.12" type="cylinder" conaffinity="0" group="1" rgba="0 0 0 1" />
+            <geom size="0.06 0.001" pos="-0.3 0.15 1.12" type="cylinder" conaffinity="0" group="1" rgba="0 0 0 1" />
+            <geom size="0.06 0.001" pos="-0.45 0.15 1.12" type="cylinder" conaffinity="0" group="1" rgba="0 0 0 1" />
+        </body>
+    </worldbody>
+</mujoco>

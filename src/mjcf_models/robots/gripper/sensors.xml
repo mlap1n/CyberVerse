@@ -1,0 +1,20 @@
+<mujoco>
+    <sensor>
+        <touch name="r_fingertip_1_sensor" site="r_fingertip_1_link_3_force_s" />
+        <touch name="r_fingertip_2_sensor" site="r_fingertip_2_link_3_force_s" />
+        <touch name="r_fingertip_middle_sensor" site="r_fingertip_middle_link_3_force_s" />
+<!--
+        <touch name="l_fingertip_1_sensor" site="l_fingertip_1_link_3_force_s" />
+        <touch name="l_fingertip_2_sensor" site="l_fingertip_2_link_3_force_s" />
+        <touch name="l_fingertip_middle_sensor" site="l_fingertip_middle_link_3_force_s" />
+-->
+        <touch name="r_fingerpad_1_sensor" site="r_fingerpad_1_link_3_force_s" />
+        <touch name="r_fingerpad_2_sensor" site="r_fingerpad_2_link_3_force_s" />
+        <touch name="r_fingerpad_middle_sensor" site="r_fingerpad_middle_link_3_force_s" />
+<!--
+        <touch name="l_fingerpad_1_sensor" site="l_fingerpad_1_link_3_force_s" />
+        <touch name="l_fingerpad_2_sensor" site="l_fingerpad_2_link_3_force_s" />
+        <touch name="l_fingerpad_middle_sensor" site="l_fingerpad_middle_link_3_force_s" />
+-->
+    </sensor>
+</mujoco>
