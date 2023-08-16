@@ -1,0 +1,6 @@
+<mujoco>
+    <sensor>
+        <gyro name="accelerometer_gyro" site="imu" />
+        <accelerometer name="accelerometer_accelerometer" site="imu" />
+    </sensor>
+</mujoco>

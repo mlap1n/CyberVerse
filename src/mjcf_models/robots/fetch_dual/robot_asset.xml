@@ -1,0 +1,21 @@
+<mujoco>
+    <asset>
+        <mesh name="torso_lift_link_collision" file="robots/fetch_dual/meshes/torso_new.stl"/>
+        <mesh name="thing" file="robots/fetch_dual/meshes/thing.stl"/>
+        <mesh name="head_pan_link_collision" file="robots/fetch_dual/meshes/head_pan_link_collision.STL"/>
+        <mesh name="head_tilt_link_collision" file="robots/fetch_dual/meshes/head_tilt_link_collision.STL"/>
+        <mesh name="l_shoulder_pan_link_collision" file="robots/fetch_dual/meshes/l_shoulder_pan_link_collision.STL"/>
+        <mesh name="r_shoulder_pan_link_collision" file="robots/fetch_dual/meshes/r_shoulder_pan_link_collision.STL"/>
+        <mesh name="shoulder_lift_link_collision" file="robots/fetch_dual/meshes/shoulder_lift_link_collision.STL"/>
+        <mesh name="upperarm_roll_link_collision" file="robots/fetch_dual/meshes/upperarm_roll_link_collision.STL"/>
+        <mesh name="elbow_flex_link_collision" file="robots/fetch_dual/meshes/elbow_flex_link_collision.STL"/>
+        <mesh name="forearm_roll_link_collision" file="robots/fetch_dual/meshes/forearm_roll_link_collision.STL"/>
+        <mesh name="wrist_flex_link_collision" file="robots/fetch_dual/meshes/wrist_flex_link_collision.STL"/>
+        <mesh name="wrist_roll_link_collision" file="robots/fetch_dual/meshes/wrist_roll_link_collision.STL"/>
+        <mesh name="gripper_link" file="robots/fetch_dual/meshes/gripper_link.STL"/>
+        <mesh name="bellows_link_collision" file="robots/fetch_dual/meshes/bellows_link_collision.STL"/>
+        <mesh name="estop_link" file="robots/fetch_dual/meshes/estop_link.STL"/>
+        <mesh name="laser_link" file="robots/fetch_dual/meshes/laser_link.STL"/>
+        <mesh name="torso_fixed_link" file="robots/fetch_dual/meshes/torso_fixed_link.STL"/>
+    </asset>
+</mujoco>

@@ -1,0 +1,27 @@
+<mujoco>
+    <asset>
+        <material name="robot0:geomMat" shininess="0.03" specular="0.4"></material>
+
+        <mesh name="dual_arm_bulkhead" file="../../dual_arm/stls/dual_ur5_husky/dual_arm_bulkhead.stl" />
+        <mesh name="flir-ptu-simple" file="../../dual_arm/stls/dual_ur5_husky/flir-ptu-simple.stl" />
+        <mesh name="shoulder" file="../../dual_arm/stls/dual_ur5_husky/shoulder.stl" />
+        <mesh name="upperarm" file="../../dual_arm/stls/dual_ur5_husky/upperarm.stl" />
+        <mesh name="forearm" file="../../dual_arm/stls/dual_ur5_husky/forearm.stl" />
+        <mesh name="wrist1" file="../../dual_arm/stls/dual_ur5_husky/wrist1.stl" />
+        <mesh name="wrist2" file="../../dual_arm/stls/dual_ur5_husky/wrist2.stl" />
+        <mesh name="wrist3" file="../../dual_arm/stls/dual_ur5_husky/wrist3.stl" />
+        <mesh name="pointgrey_bumblebee2" file="../../dual_arm/stls/dual_ur5_husky/pointgrey_bumblebee2.stl" />
+        <mesh name="robotiq_fts300" file="../../dual_arm/stls/dual_ur5_husky/robotiq_fts300.stl" />
+        <mesh name="link_0" file="../../dual_arm/stls/dual_ur5_husky/link_0.STL" />
+        <mesh name="link_1" file="../../dual_arm/stls/dual_ur5_husky/link_1.STL" />
+        <mesh name="link_2" file="../../dual_arm/stls/dual_ur5_husky/link_2.STL" />
+        <mesh name="link_3" file="../../dual_arm/stls/dual_ur5_husky/link_3.STL" />
+        <mesh name="palm" file="../../dual_arm/stls/dual_ur5_husky/palm.STL" />
+        <!-- from Standford robosuite -->
+        <mesh name="collision_link_0" file="../../dual_arm/stls/dual_ur5_husky/collision_link_0.STL" />
+        <mesh name="collision_link_1" file="../../dual_arm/stls/dual_ur5_husky/collision_link_1.STL" />
+        <mesh name="collision_link_2" file="../../dual_arm/stls/dual_ur5_husky/collision_link_2.STL" />
+        <mesh name="collision_link_3" file="../../dual_arm/stls/dual_ur5_husky/collision_link_3.STL" />
+        <mesh name="collision_palm" file="../../dual_arm/stls/dual_ur5_husky/collision_palm.STL" />
+    </asset>
+</mujoco>

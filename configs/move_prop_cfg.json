@@ -1,0 +1,5 @@
+{
+    "xml_path": "mjcf_models/playroom/playroom.xml",
+    "robot": "mjcf_models/mjmodel.xml",
+    "time_limit": 60
+}

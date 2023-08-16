@@ -1,0 +1,52 @@
+<mujoco>
+    <actuator>
+        <motor name='r_shoulder_pan'
+               joint='r_shoulder_pan_joint'
+               ctrllimited="true"
+               ctrlrange='-1 1'
+               forcelimited="auto"
+               gear="5"/>
+
+        <motor name='r_shoulder_lift'
+               joint='r_shoulder_lift_joint'
+               ctrllimited="true"
+               ctrlrange='-1 1'
+               forcelimited="auto"
+               gear="40"/>
+
+        <motor name='r_upperarm_roll'
+               joint='r_upperarm_roll_joint'
+               ctrllimited="true"
+               ctrlrange='-1 1'
+               forcelimited="auto"
+               gear="20"/>
+
+        <motor name='r_elbow_flex'
+               joint='r_elbow_flex_joint'
+               ctrllimited="true"
+               ctrlrange='-1 1'
+               forcelimited="auto"
+               gear="20"/>
+
+        <motor name='r_forearm_roll'
+               joint='r_forearm_roll_joint'
+               ctrllimited="true"
+               ctrlrange='-1 1'
+               forcelimited="auto"
+               gear="20"/>
+
+        <motor name='r_wrist_flex'
+               joint='r_wrist_flex_joint'
+               ctrllimited="true"
+               ctrlrange='-1 1'
+               forcelimited="auto"
+               gear="10"/>
+
+        <motor name='r_wrist_roll'
+               joint='r_wrist_roll_joint'
+               ctrllimited="true"
+               ctrlrange='-1 1'
+               forcelimited="auto"
+               gear="10"/>
+    </actuator>
+</mujoco>

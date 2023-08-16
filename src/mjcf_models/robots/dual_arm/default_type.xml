@@ -1,0 +1,56 @@
+<mujoco>
+    <default>
+        <!-- all geom params -->
+        <geom contype='1' conaffinity='1' margin="0.001" solimp="0.99 0.99 0.01" solref="0.01 1" condim="4" />
+        <!-- friction="1. 0.1 0.1" /> -->
+        <joint armature="0.01" damping=".1"/>
+
+        <!-- Default Joints position control-->
+        <default class="UR5">
+            <joint damping='200' />
+        </default>
+        <default class="UR5e">
+            <joint damping='100'/>
+        </default>
+        <default class="GRIPPER">
+            <joint damping='5'/>
+            <geom rgba="0.424 0.424 0.424 1.0" contype='1' conaffinity='1' margin="0.001" solimp="0.99 0.99 0.01" solref="0.01 1" condim="4" type='mesh'/>
+        </default>
+
+        <!-- Default Colours -->
+        <default class="ur5:blue">
+            <geom rgba="0.635 0.784 0.910 1.0"></geom>
+        </default>
+        <default class="ur5:grey">
+            <geom rgba="0.365 0.365 0.365 1.0"></geom>
+        </default>
+        <default class="ur5:black">
+            <geom rgba="0.106 0.106 0.106 1.0"></geom>
+        </default>
+        <default class="husky:orange">
+            <geom rgba="0.996 0.941 0.412 1.0"></geom>
+        </default>
+        <default class="husky:black">
+            <geom rgba="0.192 0.192 0.192 1.0"></geom>
+        </default>
+        <default class="gripper:black">
+            <geom rgba="0.424 0.424 0.424 1.0"></geom>
+        </default>
+        <default class="gripper:white">
+            <geom rgba="0.898 0.898 0.898 1.0" contype='1' conaffinity='1' margin='0.001' solimp='0.99 0.99 0.01' solref='0.01 1' condim='4' type='mesh'/>
+        </default>
+        <default class="bb2_camera">
+            <geom rgba="0.776 0.624 0.294 1.0"></geom>
+        </default>
+        <default class="wheel">
+            <geom rgba="0.231 0.231 0.231 1.0"></geom>
+        </default>
+        <default class="sick_lidar">
+            <geom rgba="0.761 0.714 0.576 1.0"></geom>
+        </default>
+
+        <default class="dual_ur5_husky">
+            <geom rgba="0.761 0.714 0.576 1.0"></geom>
+        </default>
+    </default>
+</mujoco>
