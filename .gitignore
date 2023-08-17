@@ -76,6 +76,9 @@ target/
 .ipynb_checkpoints/
 checkpoints/
 
+tb_logs/
+logs/
+
 # exclude data from source control by default
 /data/
 
