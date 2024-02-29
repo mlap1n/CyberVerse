@@ -7,7 +7,7 @@ import tensorflow as tf
 from tf_agents.environments import suite_pybullet
 
 import src.utils.options as options
-from src.models.sac_trainer import SACTrainer
+from src.models.tf.sac_trainer import SACTrainer
 
 def main(modify_parser: Optional[Callable[[argparse.ArgumentParser], None]] = None):
     import logging
