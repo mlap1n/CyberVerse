@@ -7,3 +7,6 @@
 [submodule "src/modules/motion-generation"]
 	path = src/modules/motion-generation
 	url = git@github.com:mlap1n/motion-generation.git
+[submodule "src/modules/RML"]
+	path = src/modules/RML
+	url = git@github.com:mlap1n/RML.git
