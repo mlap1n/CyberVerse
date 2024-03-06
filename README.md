@@ -23,13 +23,13 @@ Before installation, ensure you have installed:
 1. Clone the repository
 
 ```bash
-git clone
+git clone https://github.com/mlap1n/CyberVerse.git
 ```
 
 2. Navigate to the repository directory
 
 ```bash
-cd
+cd CyberVerse
 ```
 
 3. Install necessary dependencies
@@ -46,20 +46,6 @@ python main.py
 
 Refer to the `docs` directory for comprehensive user manuals and API documentation.
 
-## Contributing
-
-We welcome contributions to this project. If you have suggestions or want to contribute, please follow these steps:
-
-1. Fork the repo on GitHub.
-2. Create a new branch for your feature (`git checkout -b feature/your_feature`).
-3. Commit your changes (`git commit -m 'Add some your_feature'`).
-4. Push to the branch (`git push origin feature/your_feature`).
-5. Open a pull request.
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
-
-## Contact Information
-
-For inquiries or support, please email us at [contact@yourdomain.com](mailto:contact@yourdomain.com) or open an issue in this repository.
