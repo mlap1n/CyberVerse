@@ -4,3 +4,6 @@
 [submodule "gui-3d-editor"]
 	path = gui-3d-editor
 	url = git@github.com:mlap1n/gui-3d-editor.git
+[submodule "src/modules/motion-generation"]
+	path = src/modules/motion-generation
+	url = git@github.com:mlap1n/motion-generation.git
